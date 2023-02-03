@@ -1,0 +1,130 @@
+.dabba{
+  align-items: center;
+  margin-left: 90px;
+  /* margin-top: 40px; */
+  position: sticky;
+}
+
+.dabba > ol, ul {
+  list-style: none;
+}
+.dabba >li {
+  display: inline-block;
+  padding: 12px;
+
+  vertical-align: middle;
+  align-items: center;
+}
+.dabba a:hover, a:focus, a:active {
+  color: #999;
+  text-decoration: none;
+}
+ a {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  text-decoration: none;
+  /* transition: color 0.1s, background-color 0.1s; */
+
+}
+.dabba a {
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  
+  margin: 0 12px;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+  color: #333;
+
+    
+}
+.dabba a::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s,transform 0.2s ease-out;
+}
+.dabba a:active::before {
+  background-color: #331;
+}
+.dabba a:hover::before, a:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font: 300 100% 'Helvetica Neue', Helvetica, Arial;
+  }
+  
+  .Dabba {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+  
+  ul li {
+    display: inline;
+    text-align: center;
+  }
+  
+  a {
+    display: inline-block;
+    width: 25%;
+    padding: .75rem 0;
+    margin: 0;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .two:hover ~ hr {
+    margin-left: 25%;
+  }
+  
+  .three:hover ~ hr {
+    margin-left: 50%;
+  }
+  
+  .four:hover ~ hr {
+    margin-left: 75%;
+  }
+  
+  
+  hr {
+    height: .25rem;
+    width: 25%;
+    margin: 0;
+    background: tomato;
+    border: none;
+    transition: .3s ease-in-out;
+  } */

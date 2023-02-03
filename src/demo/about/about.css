@@ -1,0 +1,76 @@
+.about-section{
+  /* background: url(demo.jpg) no-repeat; */
+  /* background-size: 100%; */
+  background-color: #fdfdfd;
+  overflow: hidden;
+  height: 100%;
+  /* padding: 100px 0; */
+}
+
+.inner-container{
+  width: 100%;
+  /* float:center; */
+  margin-bottom: none;
+  align-items: center;
+  background-color: #fdfdfd;
+  padding: 150px;
+/* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+
+}
+
+.inner-container .text{
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.inner-container  .title{
+color:#5383d3;
+text-align: center;
+font-size: 100px;
+margin-bottom: 30px;
+  font-weight: 900;
+}
+#text1{
+      text-align: center;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 2px;
+    margin: 0px 0px 15px 0px;
+    
+}
+ 
+
+.member{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+
+
+@media screen and (max-width:1200px){
+  .inner-container{
+      padding: 80px;
+  }
+}
+
+.team-social > a {
+  background: white;
+}
+
+@media screen and (max-width:1000px){
+  .about-section{
+      background-size: 100%;
+      padding: 100px 40px;
+  }
+  .inner-container{
+      width: 100%;
+  }
+}
