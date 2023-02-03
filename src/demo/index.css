@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+}
+
+a{
+    text-decoration: none;
+    font-style: none;
+}
+button{
+    text-decoration: none;
+    
+}
+input{
+    text-decoration: none;
+    background: white;
+}
