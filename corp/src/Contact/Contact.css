@@ -1,0 +1,75 @@
+
+.title{
+    text-align: center;
+    justify-items: center;
+    
+}
+h1.title {
+    text-align: center;
+    justify-items: center;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: lightslategray;
+}
+form{
+  justify-items: center;
+  padding: 10px;
+  text-align: center;
+  display: revert;
+  margin:20px;
+}
+
+/* .common {
+    padding: 20px;
+    -webkit-text-stroke-width: thin;
+}
+.common1 {
+    margin-left: 33px;
+   margin-bottom: 20px;
+} */
+.form_surf{
+    align-items: center;
+    justify-content: center;
+}
+ 
+.form_surf>  input, .form_surf > textarea{
+    /* margin-left: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 45%;
+}
+textarea{
+    margin-left: 50px;
+    height: 60px;
+    width: 45%;    
+}
+.btn{
+    font-family: "Raleway",sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgb(234 239 240);
+    background: #555651;
+    outline: none;
+    border: 1px solid black;
+    cursor: grab;
+    padding:13px;
+}
+input::placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    padding-left: 100px; 
+     
+     /* align-items: center; */
+
+} 
+.byn-sec{
+    margin-left: 30px;
+}
+
+
+
+
