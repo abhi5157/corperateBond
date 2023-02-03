@@ -35,9 +35,9 @@ const App = () => {
       <Route exact  path = "/registration" element = {<Registration/>} />
       <Route exact  path = "/Explore" element = {<Menu/>} />
       {/* <Route exact  path = "/Wallet" element = {<Error /> } /> */}
-      <Route exact  path = "/login" element = {<Error /> } />
+      <Route exact  path = "/bond" element = {<Error /> } />
       <Route exact  path = "/wallet" element = {<Wallet /> } />
-      <Route path = "*" element = {<Error/>} />
+      <Route path = "*" element = {<Home/>} />
  
      
      </Routes>

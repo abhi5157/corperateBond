@@ -15,6 +15,7 @@ const Footer = () => {
 <h3>Corporate<span>Bond</span></h3>
  
 <p className="footer-links">
+  <ul  style={{display : "flex"}}>
 
 <li><NavLink to="/">Home</NavLink></li>
 
@@ -23,6 +24,7 @@ const Footer = () => {
 <li><NavLink to="/About">About</NavLink></li>
 
 <li><NavLink to="/Contact">Contact</NavLink></li>
+</ul>
 
 
 
@@ -49,7 +51,7 @@ const Footer = () => {
  
 <div>
 <i className="fa fa-envelope"></i>
-<p><a href="abhishekjoshi035@gmail.com">travellerz@gmail.com
+<p><a href="abhishekjoshi035@gmail.com">BeCorporate@gmail.com
 </a></p>
 </div>
  

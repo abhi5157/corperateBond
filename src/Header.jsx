@@ -1,6 +1,6 @@
  const Header = () =>{
     const myStyle = {
-      padding : 30,
+      padding : 19,
       textAlign : "center",
       position :"sticky",
       fontFamily : "Raleway  sans-serif",

@@ -1,20 +1,21 @@
 import React from 'react'
 import "./about.css"
 import "./MemberStyle.css"
-import Feedback from "./Feedback"
-// import { useLocation, useParams } from 'react-router-dom'
+import abh from "./abh.jpg"
+import pr1 from "./p1.png"
+import pr2 from "./p2.png"
 
 
 
-const About = () => {
-
+  {/* //team members function */}
 
 const Team = (props)  =>{
+  
   return(
     <>
      <div className="team">
     <div className="team-img">
-      <img src={props.img} alt="Team Image" />
+      <img src={props.img} alt="Team-Image" className='img-style' />
       <div className="team-social">
         <a className="social-tw" href=""><i className="fab fa-twitter"></i></a>
         <a className="social-fb" href=""><i className="fab fa-facebook-f"></i></a>
@@ -36,48 +37,50 @@ const Team = (props)  =>{
   )
 }
 
-  
-  
+
+
+// About us page 
+
+const About = () => {
   return (
     <>
-    <div className="about-section">
+
+ <div className="about-section"  style = {{background :  "none"}}>
         <div className="inner-container">
-            <h1 className='title'>About Us</h1>
-            <p className="text">
-                An online Platform to trade domestic bonds as well as corporate Bonds
+            <h1 className='title'>Virtual Velocity</h1>
+            <p className="text" id='text1'>
+                An Decentralized Application through which anyone can Corporate  trade in bonds at Domestic as well as International 
             </p>
-            <div className="member">
-                
+            <div className="member">                
                   <span >
                   <Team name = "Abhishek Joshi" 
                   area = "Block Chain Developer"
-                  img = "Images/developer.jfif"
+                  img = {pr1}
                    />
                 </span>
+
                 <span>
                   <Team
                   name = "Divyang Jha" 
                   area = "React Developer"
-                  img = "Images/developer.jfif" />
+                  img = {pr1} />
                 </span>
+
                 <span>
                   <Team
-                  name = "Gaurav Soni" 
+                  name = "Prem Kumar" 
                   area = "Content Designer"
-                  img = "Images/developer.jfif" />
-                  
+                  img = {pr1} />  
                 </span>
                
             </div>
-            </div>
-            <Feedback />
-            </div>
-            
-
-    
+          </div>
+          </div>
 
     </>
   )
 }
 
 export default About;
+
+

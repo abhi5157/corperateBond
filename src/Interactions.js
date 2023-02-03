@@ -19,14 +19,14 @@ const Interactions = (props) => {
 	return (
 			<div className={styles.interactionsCard}>
 				<form onSubmit={transferHandler}>
-					<h3> Transfer Coins </h3>
+					<h3> Transfer Tokens </h3>
 						<p> Reciever Address </p>
 						<input type='text' id='recieverAddress' className={styles.addressInput}/>
 
 						<p> Send Amount </p>
 						<input type='number' id='sendAmount' min='0' step='1'/>
 
-						<button type='submit' className={styles.button7}>Send</button>
+						<button type='submit' className={styles.button6}>Send</button>
 						<div>
 							{transferHash}
 						</div>

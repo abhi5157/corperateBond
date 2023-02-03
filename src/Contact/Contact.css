@@ -19,16 +19,24 @@ form{
   display: revert;
   margin:20px;
 }
-.common {
+
+/* .common {
     padding: 20px;
     -webkit-text-stroke-width: thin;
 }
 .common1 {
     margin-left: 33px;
    margin-bottom: 20px;
+} */
+.form_surf{
+    align-items: center;
+    justify-content: center;
 }
-input, textarea{
-    margin-left: 50px;
+ 
+.form_surf>  input, .form_surf > textarea{
+    /* margin-left: 400px; */
+    margin-left: auto;
+    margin-right: auto;
     height: 40px;
     width: 45%;
 }

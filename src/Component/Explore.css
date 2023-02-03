@@ -59,6 +59,12 @@ img{
   width: 200px;
   border-radius: 50px;
 }
+.sec2{
+  display: flex;
+  overflow: hidden;
+  font-size: large;
+  
+}
 
 
 /* .card_category{

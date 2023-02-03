@@ -1,7 +1,9 @@
+import abhi from "./abh.jpg"
+
 const Member = [
     {
         name : "Abhishek Joshi",
-        imgData : "./img/Founder.png",
+        imgData : "./abh.jpg",
         disc : "Forever Learner"
         
     },

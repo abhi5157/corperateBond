@@ -1,13 +1,12 @@
 import {React, useState, useEffect} from 'react'
 import {ethers} from 'ethers'
 import styles from './Wallet.module.css'
-import simple_token_abi from './contracts/ContractAbi.json'
+import simple_token_abi from './contracts/simple_token_abi.json'
 import Interactions from './Interactions';
 
 const Wallet = () => {
 
-	// deploy simple token contract and paste deployed contract address here. This value is local ganache chain
-	let contractAddress = '0x853B8A5682a277b04e2a0e714046d3977b188391C';
+	let contractAddress = '0x0210811B2d5A7293a00C12ee77Ae343FF845602C';
 
 	const [errorMessage, setErrorMessage] = useState(null);
 	const [defaultAccount, setDefaultAccount] = useState(null);
@@ -19,7 +18,7 @@ const Wallet = () => {
 
 	const [tokenName, setTokenName] = useState("Token");
 	const [balance, setBalance] = useState(null);
-	// const [transferHash, setTransferHash] = useState(null);
+	const [transferHash, setTransferHash] = useState(null);
 
 
 
@@ -98,6 +97,7 @@ const Wallet = () => {
 
 		let tempContract = new ethers.Contract(contractAddress, simple_token_abi, tempSigner);
 		setContract(tempContract);	
+		// setTokenName("Bond");
 	}
 
 	useEffect(() => {
@@ -114,7 +114,7 @@ const Wallet = () => {
 	return (
 	<div>
 			<h2> {tokenName + " ERC-1155 Wallet"} </h2>
-			<button className={styles.button6} onClick={connectWalletHandler}>{connButtonText}</button>
+			<button className={styles.button7} onClick={connectWalletHandler}>{connButtonText}</button>
 
 			<div className={styles.walletCard}>
 			<div>

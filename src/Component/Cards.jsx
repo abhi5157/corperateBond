@@ -1,4 +1,5 @@
 import React from 'react';
+import './Explore.css'
 
 function  Card(props){
   
@@ -21,16 +22,16 @@ function  Card(props){
         <div className="image">
           <img src={props.imgscr} alt= {props.sname}  />
         </div>
-        <div className="title">Name : {props.sname} </div>
+        <div className="title"><b> Name </b> : {props.sname} </div>
        </div>
 
        <div className="sec2">
-        <div className="content">Coupons : {props.couponRate} </div>
-        <div className="content">Maturity : {props.Maturity} </div>
-        <div className="content">Type of Bonds : {props.type} </div>
-        <div className="content">YTM : {props.Maturity} </div>
-        <div className="content">Minimum Amount : {props.minAmt} </div>
-        <div className="content">Rating : {props.ratings}</div>
+        <div className="content"> <b> Coupons </b> : {props.couponRate} </div>
+        <div className="content"><b> Maturity </b> : {props.Maturity} </div>
+        <div className="content"><b> Type of Bonds </b> : {props.type} </div>
+        <div className="content"><b> YTM </b> : {props.Maturity} </div>
+        <div className="content"> <b>Minimum Amount </b> : {props.minAmt} </div>
+        <div className="content"> <b>Rating  </b>: {props.ratings}</div>
        </div>
 
 

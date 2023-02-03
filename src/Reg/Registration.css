@@ -1,5 +1,8 @@
-
-
+*{
+  padding: 0%;
+  /* margin: 0%; */
+}
+ 
 
 .register-btn {
     font-family: "Muli-Regular";
@@ -35,15 +38,15 @@
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     padding-top: 68px;
     padding-bottom: 48px;
-    background-color: #eec0c6;
-    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    /* background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%); */
     
     opacity: 9;
   }
    
-    .inner h3 {
+    .inner h1 {
       text-transform: uppercase;
-      font-size: 22px;
+      font-size: 45px;
       font-family: "Muli-Bold";
       text-align: center;
       margin-bottom: 32px;
@@ -55,18 +58,35 @@
     padding-left: 45px; }
    
   .form-group {
-    display: flex; }
-    .form-group .form-wrapper {
+    display: flex;
+  flex-grow: inherit;
+flex-flow: column;
+flex-wrap: wrap;
+font-size: large;
+font-weight: 500;
+
+}
+    /* .form-group .form-wrapper {
       width: 50%; }
       .form-group .form-wrapper:first-child {
         margin-right: 20px; }
+    */
+  .form-wrapper, .place {
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
    
-  .form-wrapper {
-    margin-bottom: 17px; }
-    .form-wrapper label {
-      margin-bottom: 9px;
-      display: block; }
-   
+    .form-wrapper > input{
+      width:  40em;
+      align-content: center;
+
+    }
+
+    .place > input{
+      width:  40em;
+    }
+
   .form-control {
     border: 1px solid #ccc;
     display: block;
@@ -76,32 +96,19 @@
     border-radius: 20px;
     font-family: "Muli-Bold";
     background: none;
+    overflow: hidden;
    
   }
     .form-control:focus {
-      border: 1.5px solid #3575D3  ; }
+      border: 3px solid #3575D3 
+      
+      ; }
    
-  select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    cursor: pointer;
-    padding-left: 20px; }
-    select option[value=""][disabled] {
-      display: none; }
-      .grad_blue {background: #c5deea;
-        background: -moz-linear-gradient(-45deg,  #c5deea 0%, #8abbd7 31%, #066dab 100%);
-        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#c5deea), color-stop(31%,#8abbd7), color-stop(100%,#066dab));
-        background: -webkit-linear-gradient(-45deg,  #c5deea 0%,#8abbd7 31%,#066dab 100%);
-        background: -o-linear-gradient(-45deg,  #c5deea 0%,#8abbd7 31%,#066dab 100%);
-        background: -ms-linear-gradient(-45deg,  #c5deea 0%,#8abbd7 31%,#066dab 100%);
-        background: linear-gradient(135deg,  #c5deea 0%,#8abbd7 31%,#066dab 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=1 );
-        
-        }
+ 
   
 
    
-  .reg-btn{
+.register-btn{
     border: none;
     width: 152px;
     height: 40px;
@@ -127,38 +134,16 @@
     transition-property: color;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s; }
-    /* button:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #262626  ;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transform-origin: 0 50%;
-      transform-origin: 0 50%;
-      -webkit-transition-property: transform;
-      transition-property: transform;
-      -webkit-transition-duration: 0.5s;
-      transition-duration: 0.5s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out; } */
-    /* button:hover:before {
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); } */
+    
    
-  .checkbox {
-    position: relative; }
     .checkbox label {
-      padding-left: 22px;
+      /* padding-left: 22em; */
+      justify-content: center;
+      left: 30px;
       cursor: pointer; }
     .checkbox input {
       position: absolute;
+
       opacity: 0;
       cursor: pointer; }
     .checkbox input:checked ~ .checkmark:after {

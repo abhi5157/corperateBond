@@ -3,7 +3,7 @@
 	width: 50%;
 	margin: auto;
 	border-radius: 10px;
-	background-color: #A1C6EA;
+	background-color: #597ddf;
 	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
 }
 
@@ -24,7 +24,7 @@ h2{
 	margin: auto;
 	padding-bottom: 1em;
 	border-radius: 10px;
-	background-color: #507DBC;
+	background-color: #597ddf;
 	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
 }
 
@@ -36,7 +36,7 @@ h2{
 	border: none;
 	
 	padding: 0.7em 1.4em;
-	margin-left: 530px;
+	margin-left: 120px;
 	text-align: center;
 	align-items: center;
 	cursor: pointer;
@@ -55,7 +55,7 @@ h2{
 	border: none;
 	
 	padding: 0.7em 1.4em;
-	/* margin-left: 530px; */
+	margin-left: 697px;
 	text-align: center;
 	align-items: center;
 	cursor: pointer;

@@ -37,9 +37,9 @@ const Contact = () => {
     </div>
     <div className="">
       <div className="row">
-        <div className="">
-          <form onSubmit={formSubmit}>
-          <div class="Name" className = "common" >
+     
+          <form onSubmit={formSubmit}  className= "form_surf">
+          
     <label for="exampleFormControlInput1" className="form-label" >Full Name </label>
     <input 
     type="text" 
@@ -52,8 +52,8 @@ const Contact = () => {
     placeholder="Enter your Name"
     required
      />
-  </div>
-  <div className="Number  common">
+ 
+  
     <label for="exampleFormControlInput1" className="form-label">Phone Number</label>
     <input 
     type="number" 
@@ -64,8 +64,8 @@ const Contact = () => {
     onChange={InputEvent} 
     placeholder="Enter your Number"
     required />
-  </div>        
-  <div className="mail  common" >
+       
+  
     <label for="exampleFormControlInput1" className="form-label">Email address</label>
     <input 
     type="email" 
@@ -76,23 +76,22 @@ const Contact = () => {
     onChange={InputEvent} 
     placeholder="xyz@example.com" 
     required/>
-  </div>
-  <div className="msg common"  >
-    <label for="exampleFormControlTextarea1" className="form-label  common1" >Message </label>
+  
+ 
+    <label for="exampleFormControlTextarea1" className="form-label" >Message </label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" 
     name="msg" 
     value={data.msg} 
     onChange={InputEvent} 
     placeholder="Your Message"
     required ></textarea>
-  </div>
+ 
   <div className="btn-sec">
     <button className="btn"  > Submit Form </button>
   </div>
   </form>
         </div> 
       </div>
-    </div>
 
     </>
   );
